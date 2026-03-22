@@ -3,7 +3,7 @@ from pygame import *
 okno = display.set_mode((700,500))
 display.set_caption('чота')
 #задай фон сцены
-okno.fill(52, 157, 207)
+okno.fill((52, 157, 207))
 
 game = True
 
@@ -16,6 +16,6 @@ while game:
     for e in event.get():
         if e.type == QUIT:
             game = False
-clock.tick(fps)
-display.update()
+    clock.tick(fps)
+    display.update()
 
